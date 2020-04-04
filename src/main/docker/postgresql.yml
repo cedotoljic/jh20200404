@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jh20200404-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jh20200404/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jh20200404
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
